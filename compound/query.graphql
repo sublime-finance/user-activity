@@ -32,7 +32,7 @@
 }
 
 
-#query for borrow, from: account being liquidated, to: liquidator 
+#query for borrow, 
 {
   borrowEvents(where:{borrower:"0x5142126b4573ae1a23e4c8ab2a16631cae725325"}) {
     id
@@ -44,7 +44,7 @@
   }
 }
 
-#query for liquidation 
+#query for liquidation, from: account being liquidated, to: liquidator 
 {
   liquidationEvents(first:5) {
     id

@@ -1,0 +1,37 @@
+# api :- https://api.thegraph.com/subgraphs/name/aave/protocol
+
+
+# deposit query
+{
+  deposits(where:{user:"0x0056d1fd2ca3c0f3a7b6ed6cdd1f1f104b4bf9a9"}){
+    id
+    user{
+        id
+    }
+    timestamp
+  }
+}
+
+# borrow query
+
+{
+  borrows(where:{user:"0xfb5a2da7c365bfdd817bcc29a49c97b80e450f3d"}){
+    id
+    user{
+        id
+    }
+    timestamp
+  }
+}
+
+# liquidation calls
+
+{
+  liquidationCalls{
+    id
+    user{
+        id
+    }
+    timestamp
+  }
+}
